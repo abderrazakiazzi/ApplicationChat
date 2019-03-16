@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header text-primary">Conversation chat room x    </div>
+    <div class="card">
+      <div class="card-body"> 
+          <ul *ngFor="let message of messages" class="list-group">
+        <div class="row1">
+            <div class="card-body bg-info"> <div class="card-body col-sm-2 bg-white" > {{message  }}  </div></div>
+            
+        </div>
+        </ul>
+
+
+      </div>
+    </div>
+    <div class="card-body" >
+    <div class="card">
+        <div class="card-body">
+          
+         <label> comments </label>
+              <input type="text" #val  id="message" name="message" ngModel> 
+    
+         <button class="btn btn-primary"  type="submit" value="submit"> send </button>
+
+        </div>
+    </div>
+  </div> 
+
+  </div>
+
+</div>
